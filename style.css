@@ -5,12 +5,13 @@ body {
   color:white;
 }
 
-/* TOP BAR */
+/* TOP BAR (FIXED TO MATCH BRAND) */
 .top-bar {
-  background:#ff3b3b;
+  background:#ff6ec7; /* 🔥 matches your brand now */
   text-align:center;
   padding:10px;
-  font-weight:bold;
+  font-weight:600;
+  letter-spacing:0.5px;
 }
 
 /* HEADER */
@@ -84,7 +85,7 @@ body {
   color:white;
 }
 
-/* FLOAT */
+/* FLOAT BUTTON */
 .call-btn {
   position:fixed;
   bottom:20px;
