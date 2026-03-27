@@ -1,130 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0a0a12;
+  color:white;
+}
 
-<title>24/7 Emergency Locksmith | ShoreLox</title>
+/* TOP BAR (FIXED TO MATCH BRAND) */
+.top-bar {
+  background:#ff6ec7; /* 🔥 matches your brand now */
+  text-align:center;
+  padding:10px;
+  font-weight:600;
+  letter-spacing:0.5px;
+}
 
-<meta name="description" content="Locked out? 24/7 emergency locksmith in Atlantic & Cape May County NJ. Fast response. Call (609) 525-4845 now.">
+/* HEADER */
+.header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+.logo-wrap {
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
 
-</head>
+.logo-wrap img {
+  height:55px;
+}
 
-<body>
+.nav-call {
+  color:#ff6ec7;
+  font-weight:bold;
+  text-decoration:none;
+}
 
-<!-- TOP URGENCY BAR -->
-<div class="top-bar">
-🚨 AVAILABLE NOW • TECHNICIAN NEARBY • CALL (609) 525-4845
-</div>
+/* HERO */
+.hero {
+  text-align:center;
+  padding:100px 20px;
+  background:linear-gradient(135deg,#0f172a,#1e293b);
+}
 
-<!-- HEADER -->
-<header class="header">
-  <div class="logo-wrap">
-    <img src="Logo.png">
-    <div class="logo-text">
-      <strong>ShoreLox</strong>
-      <span>Locksmith</span>
-    </div>
-  </div>
+.hero-logo {
+  width:120px;
+  margin-bottom:20px;
+}
 
-  <a href="tel:6095254845" class="nav-call">(609) 525-4845</a>
-</header>
+.sub {
+  color:#00c6ff;
+}
 
-<!-- FLOAT BUTTON -->
-<a href="tel:6095254845" class="call-btn">CALL NOW</a>
+.response {
+  color:#00c6ff;
+  margin:10px 0;
+}
 
-<!-- HERO -->
-<section class="hero">
-  <img src="Logo.png" class="hero-logo">
+/* BUTTONS */
+.hero-buttons {
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
 
-  <h1>Locked Out? We’re On The Way.</h1>
-  <p class="sub">24/7 Emergency Locksmith • Atlantic & Cape May County</p>
+.btn {
+  padding:14px 28px;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
+}
 
-  <p class="tagline">
-    Fast, damage-free entry. Real help — not a call center.
-  </p>
+.btn.primary {
+  background:#ff6ec7;
+  color:white;
+}
 
-  <p class="response">🚗 Arrival in 15–30 minutes</p>
+.btn.secondary {
+  background:#1e293b;
+  border:1px solid rgba(255,255,255,0.1);
+  color:white;
+}
 
-  <div class="hero-buttons">
-    <a href="tel:6095254845" class="btn primary">📞 Call Now</a>
-    <a href="#services" class="btn secondary">See Services</a>
-  </div>
-</section>
+/* FLOAT BUTTON */
+.call-btn {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ff6ec7;
+  padding:16px 22px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+  color:white;
+}
 
-<!-- TRUST STRIP -->
-<section class="trust-strip">
-✔️ Licensed • ✔️ Fast Response • ✔️ Local Technician • ✔️ No Damage Entry
-</section>
+/* TRUST STRIP */
+.trust-strip {
+  text-align:center;
+  padding:15px;
+  background:#141426;
+  font-size:0.9rem;
+}
 
-<!-- SERVICES -->
-<section id="services" class="services">
-  <h2>Locksmith Services</h2>
+/* SECTIONS */
+section {
+  padding:70px 20px;
+  text-align:center;
+}
 
-  <div class="grid">
-    <div>Car Lockouts</div>
-    <div>House Lockouts</div>
-    <div>Lock Rekeying</div>
-    <div>Key Replacement</div>
-    <div>Commercial Locksmith</div>
-    <div>Emergency Service</div>
-  </div>
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+}
 
-  <div class="mid-cta">
-    <a href="tel:6095254845" class="btn primary">📞 Get Help Now</a>
-  </div>
-</section>
+.grid div {
+  background:#141426;
+  padding:20px;
+  border-radius:10px;
+}
 
-<!-- SOCIAL PROOF -->
-<section class="reviews">
-  <h2>Trusted by Local Customers</h2>
+/* REVIEWS */
+.review-box {
+  background:#141426;
+  margin:10px auto;
+  padding:15px;
+  border-radius:10px;
+  max-width:500px;
+}
 
-  <div class="review-box">
-    ⭐⭐⭐⭐⭐ Fast, professional, and showed up quickly.
-  </div>
-
-  <div class="review-box">
-    ⭐⭐⭐⭐⭐ Got me back into my car in minutes.
-  </div>
-
-  <div class="review-box">
-    ⭐⭐⭐⭐⭐ Honest pricing and great service.
-  </div>
-</section>
-
-<!-- AREAS -->
-<section class="areas">
-  <h2>Service Areas</h2>
-
-  <p>
-    Atlantic City • Egg Harbor Township • Galloway • Hammonton • Somers Point • 
-    Ocean City • Cape May • Wildwood • Sea Isle City • Ventnor • Margate • Brigantine
-  </p>
-
-  <p>
-    <a href="atlantic-city-locksmith.html">Atlantic City Locksmith</a> |
-    <a href="egg-harbor-township-locksmith.html">Egg Harbor Township Locksmith</a> |
-    <a href="galloway-locksmith.html">Galloway Locksmith</a> |
-    <a href="hammonton-locksmith.html">Hammonton Locksmith</a> |
-    <a href="somers-point-locksmith.html">Somers Point Locksmith</a> |
-    <a href="ventnor-locksmith.html">Ventnor Locksmith</a> |
-    <a href="margate-locksmith.html">Margate Locksmith</a> |
-    <a href="brigantine-locksmith.html">Brigantine Locksmith</a> |
-    <a href="cape-may-locksmith.html">Cape May Locksmith</a> |
-    <a href="wildwood-locksmith.html">Wildwood Locksmith</a> |
-    <a href="sea-isle-city-locksmith.html">Sea Isle City Locksmith</a> |
-    <a href="ocean-city-locksmith.html">Ocean City Locksmith</a>
-  </p>
-</section>
-
-<!-- FINAL CTA -->
-<section class="cta">
-  <h2>Need Help Right Now?</h2>
-  <a href="tel:6095254845" class="btn primary">(609) 525-4845</a>
-</section>
-
-</body>
-</html>
+/* CTA */
+.cta {
+  background:linear-gradient(135deg,#ff6ec7,#00c6ff);
+  color:#000;
+}
