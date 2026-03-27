@@ -1,4 +1,11 @@
-/* HEADER CLEANER */
+body {
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0a0a12;
+  color:white;
+}
+
+/* HEADER */
 .header {
   display:flex;
   justify-content:space-between;
@@ -34,8 +41,7 @@
   text-decoration:none;
 }
 
-
-/* HERO CLEAN + PROFESSIONAL */
+/* HERO */
 .hero {
   background:linear-gradient(135deg,#0f172a,#1e293b);
   padding:110px 20px;
@@ -50,7 +56,6 @@
 .hero-logo {
   width:120px;
   margin-bottom:20px;
-  opacity:0.95;
 }
 
 .hero h1 {
@@ -59,9 +64,8 @@
 }
 
 .sub {
-  font-weight:600;
   color:#00c6ff;
-  margin-bottom:15px;
+  font-weight:600;
 }
 
 .tagline {
@@ -69,8 +73,7 @@
   margin-bottom:25px;
 }
 
-
-/* BUTTONS UPGRADE */
+/* BUTTONS */
 .hero-buttons {
   display:flex;
   justify-content:center;
@@ -94,4 +97,57 @@
   background:#1e293b;
   color:white;
   border:1px solid rgba(255,255,255,0.1);
+}
+
+/* FLOAT CALL */
+.call-btn {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#ff6ec7;
+  padding:15px 20px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+section {
+  padding:70px 20px;
+  text-align:center;
+}
+
+/* GRID */
+.grid, .trust-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+
+.grid div, .trust-grid div {
+  background:#141426;
+  padding:20px;
+  border-radius:12px;
+}
+
+/* REVIEWS */
+.review-box {
+  background:#141426;
+  margin:10px auto;
+  padding:15px;
+  border-radius:10px;
+  max-width:500px;
+}
+
+/* CTA */
+.cta {
+  background:linear-gradient(135deg,#ff6ec7,#00c6ff);
+  color:#000;
+}
+
+/* LINKS */
+a {
+  color:#00c6ff;
 }
