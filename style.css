@@ -5,13 +5,21 @@ body {
   color:white;
 }
 
+/* TOP BAR */
+.top-bar {
+  background:#ff6ec7;
+  text-align:center;
+  padding:8px;
+  font-size:0.9rem;
+  font-weight:600;
+}
+
 /* HEADER */
 .header {
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px 30px;
-  background:#0a0a12;
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
@@ -23,11 +31,6 @@ body {
 
 .logo-wrap img {
   height:55px;
-}
-
-.logo-text strong {
-  display:block;
-  font-size:1.1rem;
 }
 
 .logo-text span {
@@ -48,19 +51,9 @@ body {
   text-align:center;
 }
 
-.hero-content {
-  max-width:700px;
-  margin:auto;
-}
-
 .hero-logo {
   width:120px;
   margin-bottom:20px;
-}
-
-.hero h1 {
-  font-size:2.8rem;
-  margin-bottom:10px;
 }
 
 .sub {
@@ -69,8 +62,12 @@ body {
 }
 
 .tagline {
-  opacity:0.8;
-  margin-bottom:25px;
+  opacity:0.85;
+}
+
+.response {
+  color:#00c6ff;
+  margin:10px 0;
 }
 
 /* BUTTONS */
@@ -95,11 +92,11 @@ body {
 
 .btn.secondary {
   background:#1e293b;
-  color:white;
   border:1px solid rgba(255,255,255,0.1);
+  color:white;
 }
 
-/* FLOAT CALL */
+/* FLOAT BUTTON */
 .call-btn {
   position:fixed;
   bottom:20px;
@@ -107,9 +104,9 @@ body {
   background:#ff6ec7;
   padding:15px 20px;
   border-radius:50px;
-  color:white;
-  text-decoration:none;
   font-weight:bold;
+  text-decoration:none;
+  color:white;
 }
 
 /* SECTIONS */
@@ -132,13 +129,15 @@ section {
   border-radius:12px;
 }
 
-/* REVIEWS */
-.review-box {
-  background:#141426;
-  margin:10px auto;
-  padding:15px;
-  border-radius:10px;
-  max-width:500px;
+/* TRUST NOTE */
+.trust-note {
+  margin-top:20px;
+  opacity:0.8;
+}
+
+/* MID CTA */
+.mid-cta {
+  margin-top:30px;
 }
 
 /* CTA */
@@ -150,4 +149,11 @@ section {
 /* LINKS */
 a {
   color:#00c6ff;
+}
+
+/* FOOTER */
+footer {
+  padding:20px;
+  font-size:0.8rem;
+  opacity:0.6;
 }
